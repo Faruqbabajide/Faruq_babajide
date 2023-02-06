@@ -2,7 +2,7 @@ use std::io::Read;
 use std::io;
 
 fn admin (){
- let mut file = std::fs::File::open("globacom_db.txt").unwrap();
+ let mut file = std::fs::File::open("globacom_db.sql").unwrap();
  let mut contents = String::new();
  file.read_to_string(&mut contents).unwrap();
  println!("{:?}",contents );
